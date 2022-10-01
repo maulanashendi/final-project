@@ -11,7 +11,7 @@ import numpy as np
 import os
 
 # directory
-os.chdir("/Users/maulanashendi/Desktop/Skripsi/Application 2.0/deployment")
+# os.chdir("/Users/maulanashendi/Desktop/Skripsi/Application 2.0/deployment")
 
 app = Flask(__name__)
 
