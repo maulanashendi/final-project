@@ -1,1 +1,1 @@
-web: gunicorn -b :$PORT app:app
+web: gunicorn -b :$PORT app:app workers Integer(ENV['WEB_CONCURRENCY'] || 3) 
