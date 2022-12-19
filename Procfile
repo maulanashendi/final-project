@@ -1,1 +1,1 @@
-web:gunicorn app:app.py --reload --workers 2 ps:scale web=1
+web:gunicorn app:app
