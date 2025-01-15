@@ -38,17 +38,17 @@ Convolutional Neural Networks (CNNs) are the foundation of this application. A C
 
 1. **Convolution**: Extracts features from the input image by applying a set of learnable filters (kernels). The convolution operation can be represented as:
 
-   (I * K)(x, y) = Σ Σ I(x+m, y+n) * K(m, n)
+   $$(I * K)(x, y) = Σ Σ I(x+m, y+n) * K(m, n)$$
 
    Where:
-   - I is the input image.
-   - K is the kernel/filter.
-   - (x, y) are the coordinates of the pixel.
+   - $$I$$ is the input image.
+   - $$K$$ is the kernel/filter.
+   - $$(x, y)$$ are the coordinates of the pixel.
    - The summation computes the dot product of the kernel with the overlapping region of the image.
 
 2. **Activation Function**: Introduces non-linearity into the network. A common choice is the ReLU (Rectified Linear Unit) function:
 
-   f(x) = max(0, x)
+   $$f(x) = max(0, x)$$
 
 3. **Pooling**: Reduces the spatial dimensions of the image while retaining important features. Common pooling methods include max pooling and average pooling.
 
@@ -56,7 +56,7 @@ Convolutional Neural Networks (CNNs) are the foundation of this application. A C
 
 5. **Softmax Function**: Converts the final layer's output into probabilities for each class:
 
-   σ(z)_i = e^(z_i) / Σ e^(z_j)
+   $$σ(z)_i = e^(z_i) / Σ e^(z_j)$$
 
    Where z_i is the input to the softmax function for class i, and N is the total number of classes.
 
